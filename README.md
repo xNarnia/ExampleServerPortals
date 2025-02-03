@@ -1,5 +1,7 @@
 # Example - ServerPortals
 Example mod for implementing or extending new functionality to ServerPortals.
+- **Steam Workshop:** https://steamcommunity.com/sharedfiles/filedetails/?id=3420353043
+- **Mod Dependency:** https://github.com/xNarnia/ServerPortals
 
 # Getting Started
 There are several examples included you can find amongst the files. Copy this source code and edit it as you please!
