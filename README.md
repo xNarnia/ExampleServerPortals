@@ -10,4 +10,4 @@ modReferences=ServerPortals
 sortAfter=ServerPortals@1.1
 ```
 
-Note: Do NOT add a `dllIncludes=ServerPortals` line or else your mod will break!
+**Note: Do NOT add a `dllIncludes=ServerPortals` line or else your mod will break!**
