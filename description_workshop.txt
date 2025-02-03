@@ -1,0 +1,14 @@
+﻿[h1]Example - ServerPortals[/h1]
+Example mod for implementing or extending new functionality to ServerPortals.
+https://steamcommunity.com/sharedfiles/filedetails/?id=3409334826
+
+[h2]Getting Started[/h2]
+There are several examples included you can find amongst the files. Copy the source code and edit it as you please!
+https://github.com/xNarnia/ExampleServerPortals
+
+It is very important you setup your `build.txt` correctly. It must have these options
+
+modReferences=ServerPortals
+sortAfter=ServerPortals@1.1
+
+[b]Note: Do NOT add a `dllIncludes=ServerPortals` line or else your mod will break![/b]
