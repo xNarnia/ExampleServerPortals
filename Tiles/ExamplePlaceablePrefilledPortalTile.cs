@@ -26,6 +26,7 @@ namespace ExampleServerPortals.Tiles
             TileObjectData.newTile.CoordinateHeights = new[] { 16, 18 };
 
             // Allows your portal to display it's stored internal information when hovering over it
+            // Also registers this tile to be loaded/saved to the world file
             TileObjectData.newTile.HookPostPlaceMyPlayer = new PlacementHook(ModContent.GetInstance<ServerPortalTileEntity>().Hook_AfterPlacement, -1, 0, true);
             TileObjectData.addTile(Type);
         }
@@ -38,7 +39,7 @@ namespace ExampleServerPortals.Tiles
                 "Localhost", 
                 "Look, it's me!"
             );
-			return true;
+            return true;
         }
     }
 }

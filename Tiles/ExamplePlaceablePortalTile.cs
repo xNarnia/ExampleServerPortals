@@ -23,17 +23,18 @@ namespace ExampleServerPortals.Tiles
             TileObjectData.newTile.StyleHorizontal = true;
             TileObjectData.newTile.CoordinateHeights = new[] { 16, 18 };
 
-            // Allows your portal to display it's stored internal information when hovering over it
-            TileObjectData.newTile.HookPostPlaceMyPlayer = new PlacementHook(ModContent.GetInstance<ServerPortalTileEntity>().Hook_AfterPlacement, -1, 0, true);
+			// Allows your portal to display it's stored internal information when hovering over it
+			// Also registers this tile to be loaded/saved to the world file
+			TileObjectData.newTile.HookPostPlaceMyPlayer = new PlacementHook(ModContent.GetInstance<ServerPortalTileEntity>().Hook_AfterPlacement, -1, 0, true);
             TileObjectData.addTile(Type);
         }
 
         /// <summary>
         /// Prevents this tile from dropping an item so players can't take it and abuse it.
         /// </summary>
-		public override bool CanDrop(int i, int j)
-		{
-			return false;
-		}
-	}
+        public override bool CanDrop(int i, int j)
+        {
+            return false;
+        }
+    }
 }
