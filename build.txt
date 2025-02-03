@@ -1,5 +1,6 @@
 displayName = Example ServerPortals
 author = Narnia
+homepage = https://forums.terraria.org/index.php?threads/server-portals-create-portals-to-multiplayers-servers-directly-in-your-world.109793/
 modReferences=ServerPortals
 sortAfter=ServerPortals@1.1
 version = 0.1
