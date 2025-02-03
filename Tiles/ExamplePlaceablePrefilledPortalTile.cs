@@ -32,11 +32,13 @@ namespace ExampleServerPortals.Tiles
 
         public override bool CanPlace(int i, int j)
         {
-            ServerPortalsMod.ServerTransferMenu.InputServerIP.Text = "";
-            ServerPortalsMod.ServerTransferMenu.InputServerPort.Text = "7777";
-            ServerPortalsMod.ServerTransferMenu.InputServerName.Text = "Localhost";
-            ServerPortalsMod.ServerTransferMenu.InputServerDescription.Text = "Look, it's me!";
-            return true;
+            ServerPortalsMod.SetServerInfo(
+                "127.0.0.1", 
+                7777, 
+                "Localhost", 
+                "Look, it's me!"
+            );
+			return true;
         }
     }
 }

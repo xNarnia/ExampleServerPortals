@@ -27,5 +27,13 @@ namespace ExampleServerPortals.Tiles
             TileObjectData.newTile.HookPostPlaceMyPlayer = new PlacementHook(ModContent.GetInstance<ServerPortalTileEntity>().Hook_AfterPlacement, -1, 0, true);
             TileObjectData.addTile(Type);
         }
-    }
+
+        /// <summary>
+        /// Prevents this tile from dropping an item so players can't take it and abuse it.
+        /// </summary>
+		public override bool CanDrop(int i, int j)
+		{
+			return false;
+		}
+	}
 }
